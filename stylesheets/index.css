@@ -6,8 +6,13 @@
   margin: 0;
   padding: 0; }
 
-picture,
 img {
-  display: block; }
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: contain; }
+  @media (min-width: 40em) {
+    img {
+      aspect-ratio: 1/2; } }
 
 /*# sourceMappingURL=index.css.map */

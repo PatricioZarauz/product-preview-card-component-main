@@ -7,7 +7,20 @@
   padding: 0;
 }
 
-picture,
+// picture,
+// img {
+//   display: block;
+// }
+
 img {
-  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: contain;
+
+  @media (min-width: 40em) {
+    aspect-ratio: 1/2;
+  }
 }
+
+
