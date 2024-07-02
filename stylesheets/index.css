@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0; }
 
+picture,
+img {
+  display: block; }
+
 img {
   max-inline-size: 100%;
   block-size: auto;
@@ -14,5 +18,32 @@ img {
   @media (min-width: 40em) {
     img {
       aspect-ratio: 1/2; } }
+
+body {
+  height: calc(100vh - 2rem);
+  margin: 1rem;
+  display: grid;
+  place-items: center; }
+
+main {
+  margin-inline: auto;
+  margin-block: auto;
+  width: fit-content; }
+
+article.product-card {
+  max-width: 30rem;
+  width: fit-content;
+  overflow: hidden;
+  display: grid;
+  border-radius: 10px;
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-columns: 1fr; }
+  @media (min-width: 40em) {
+    article.product-card {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(1fr, 2); } }
+
+.product-content {
+  padding: 1rem; }
 
 /*# sourceMappingURL=index.css.map */
