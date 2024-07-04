@@ -4,6 +4,16 @@ $very_dark_blue: hsl(212, 21%, 14%);
 $dark_grayish_blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
+@mixin basic-button-animation {
+  transition: transform 0.2s ease;
+  &:active {
+    transform: translateY(0.3rem);
+  }
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -134,6 +144,8 @@ abbr {
 }
 
 a.add-cart-button {
+  @include basic-button-animation;
+
   text-decoration: none;
   background-color: $dark_cyan;
   padding: 1rem;

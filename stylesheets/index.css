@@ -110,6 +110,7 @@ abbr {
   text-decoration: none; }
 
 a.add-cart-button {
+  transition: transform 0.2s ease;
   text-decoration: none;
   background-color: #3c8067;
   padding: 1rem;
@@ -119,6 +120,10 @@ a.add-cart-button {
   display: flex;
   justify-content: center;
   gap: 0.5rem; }
+  a.add-cart-button:active {
+    transform: translateY(0.3rem); }
+  a.add-cart-button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0); }
   @media (min-width: 45rem) {
     a.add-cart-button {
       padding: 1.25rem; } }
